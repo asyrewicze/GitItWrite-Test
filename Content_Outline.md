@@ -1,0 +1,91 @@
+# Backup Bible for MSPs Outline
+
+- (ANDY) Introduction for MSPs
+- (PAUL) Why Should You Offer Backup Services for Your Customers?
+  - The most important thing you can do for a client
+  - All-Inclusive Model
+  - Your customers just expect Backup
+  - Your customers lack the expertise to do it effectively themselves
+  - An additional revenue stream
+  - Helps build trust
+- (PAUL) How to Build a BaaS Practice
+  - (PAUL) What is BaaS?
+  - (PAUL) What Services are you offering?
+    - Simple backup recovery?
+    - Onsite AND offsite backups?
+    - Full blown DR Services?
+      - To your hardware?
+      - To customer hardware?
+      - To Cloud Services?
+        - Which Cloud and which service?
+  - (PAUL) How to Select a Product
+  - (PAUL) How to Choose a Pricing Model
+    - Lump-Sum
+    - Monthly
+    - Value-Add
+    - Part of all you can eat
+  - (ANDY) Defining SLAs
+  - (ANDY) Regular DR Testing
+    - Is it included?
+      - What is included in the DR Plan?
+    - Who is conducting the test restore?
+  - (ANDY) Regulatory Considerations
+    - What industry regulations will you support?
+      - Do you have the expertise to support the choices?
+  - (ANDY) Defining these choices in your MSA
+    - Why are we doing this?
+- (ANDY) Prepping BaaS Operations
+  - Training your team
+  - Defining Processes
+    - Onboarding Process
+    - Backup Schedules
+    - Restoration Jobs
+    - DR Testing
+    - Auditing Operations
+    - Offboarding Process
+    - Regulatory Process and Procedures
+- (ERIC?) Technical Operations
+  - How to Deploy Backup Services At Scale
+    - Manual rollout via automated/scripted install
+    - Does the client install or the MSP?
+      - MSP conducting the installation insures correct configuration
+      - If client conducts installation the installation and configuration should be idiot-proof and be heavily documented
+        - MSP should charge for fixing misconfigurations
+    - There is something to be said for choosing a backup vendor that makes rollout simple
+    - Can your RMM tool be used to push out backup services?
+  - How to do Monitoring and Reporting of Backup Services at Scale
+    - This section simply focuses on why any backup application you choose should have rich alerting and reporting features
+    - Is there a centralized dashboard that is multi-tenant?
+      - Why is this important?
+    - Options if you don't have a multi-tenant solution?
+      - APIs
+      - Event Log collecting
+        - Done via VPN (icky)
+        - Done via your RMM
+    - What happens when an alert comes in?
+      - Ticket generated
+      - Alert to client POC and MSP
+  - How to conduct Backup Maintenance and Patching Operations at Scale
+    - Backup maintenance operations should be largely automated via whatever backup tool you select
+      - Alerting should be configured for failed maintenance tasks
+    - Customers with a higher tier backup package may opt for manual checks by technical staff
+  - How to Manage Multiple Backup/DR Operations at Once
+    - Dedicated backup instance for each client will make this point moot, it becomes a man power issue at that point
+    - Potential snag is when the MSP is the shared offsite location for multiple clients. Care should be given to size disk performance and networking to accommodate multiple restore/backup operations at once
+  - How to provide backup access to your customers
+    - This section simply talks about self service portals
+      - Care should be taken to insure that the chosen solution properly separates tenants data and identities.
+      - Who within the client's organization should have access?
+        - Technical staff with full access?
+        - Client POC with "read-only" access for monitoring and reporting?
+          - Any better than the automated reporting and alerting above?
+          - This could be a bad idea for needy customers.
+  - How to "give back" your customers data if needed
+    - Discuss how you may script the offboarding process
+    - Is the backup data provided over the network or on disk?
+      - If disk is the media shipped in a protected and verifiable fashion?
+- (ANDY) Appendix
+  - SLA Blueprint
+  - MSA Addendum Blueprint
+  - HTML Reporting Blueprint
+    - Examples using the Altaro VM Backup Rest API
