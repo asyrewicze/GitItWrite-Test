@@ -1,13 +1,6 @@
 # Backup Bible for MSPs Outline
 
-- (ANDY) Introduction for MSPs
-- (PAUL) Why Should You Offer Backup Services for Your Customers?
-  - The most important thing you can do for a client
-  - All-Inclusive Model
-  - Your customers just expect Backup
-  - Your customers lack the expertise to do it effectively themselves
-  - An additional revenue stream
-  - Helps build trust
+- Talk about something New Here
 - (PAUL) How to Build a BaaS Practice
   - (PAUL) What is BaaS?
   - (PAUL) What Services are you offering?
